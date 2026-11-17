@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menesh Nagar Builders | NHBRC Registered Contractor – Benoni & East Rand</title>
-    <meta name="description" content="Menesh Nagar Builders (NHBRC No. 1-193210458). Reliable construction, renovations, alterations, plumbing, electrical, paving, painting, waterproofing, and property maintenance in Benoni and the East Rand.">
+    <meta name="description" content="Menesh Nagar Builders (NHBRC No. 1-193210458). Modern construction, renovations, plumbing, electrical, paving, painting, waterproofing, and property maintenance in Benoni and the East Rand.">
     
-    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,14 +23,14 @@
                     },
                     colors: {
                         brand: {
-                            teal: '#155779',
-                            tealDark: '#0F415B',
-                            tealLight: '#1E6F99',
-                            gold: '#F4BE18',
-                            goldHover: '#E0AC0D',
-                            goldLight: '#FEF8E3',
-                            slate: '#1E293B',
-                            surface: '#F8F9FA'
+                            dark: '#0A1118',
+                            card: '#111C24',
+                            border: '#223442',
+                            teal: '#0EA5E9',
+                            tealDark: '#0284C7',
+                            gold: '#F59E0B',
+                            goldLight: '#FEF3C7',
+                            slate: '#94A3B8'
                         }
                     }
                 }
@@ -38,29 +38,34 @@
         }
     </script>
     <style>
-        .card-corner-accent {
-            clip-path: polygon(0 0, 100% 0, 100% 100%);
+        .glass-panel {
+            background: rgba(17, 28, 36, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(34, 52, 66, 0.8);
+        }
+        .hero-glow {
+            background: radial-gradient(circle at 70% 30%, rgba(14, 165, 233, 0.12) 0%, rgba(245, 158, 11, 0.05) 40%, transparent 70%);
         }
     </style>
 </head>
-<body class="bg-brand-surface text-brand-slate antialiased selection:bg-brand-gold selection:text-brand-slate">
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-gold selection:text-brand-dark">
 
-    <!-- Top Contact & Accreditation Bar -->
-    <div class="bg-brand-tealDark text-white text-xs sm:text-sm py-2.5 border-b border-white/10">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-wrap items-center justify-between gap-2">
+    <!-- Top Announcement Bar -->
+    <div class="bg-[#070D12] text-xs py-2.5 border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-wrap items-center justify-between gap-2">
             <div class="flex items-center gap-3">
-                <span class="inline-flex items-center gap-1.5 bg-white/10 px-2.5 py-0.5 rounded font-semibold text-brand-gold">
+                <span class="inline-flex items-center gap-1.5 bg-brand-gold/10 text-brand-gold px-2.5 py-0.5 rounded-full font-semibold border border-brand-gold/20">
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                     NHBRC Reg: 1-193210458
                 </span>
-                <span class="hidden md:inline text-slate-200">Benoni, Boksburg &amp; East Rand</span>
+                <span class="text-brand-slate hidden sm:inline">Benoni, Boksburg &amp; East Rand Specialist</span>
             </div>
-            <div class="flex items-center gap-4 sm:gap-6 font-medium">
-                <a href="tel:0837773812" class="hover:text-brand-gold transition-colors flex items-center gap-1.5">
+            <div class="flex items-center gap-5 font-medium">
+                <a href="tel:0837773812" class="hover:text-brand-gold transition-colors flex items-center gap-1.5 text-slate-300">
                     <svg class="w-3.5 h-3.5 text-brand-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
                     083 777 3812
                 </a>
-                <a href="mailto:mgnagar67@gmail.com" class="hidden sm:flex hover:text-brand-gold transition-colors items-center gap-1.5">
+                <a href="mailto:mgnagar67@gmail.com" class="hidden md:flex hover:text-brand-gold transition-colors items-center gap-1.5 text-slate-300">
                     <svg class="w-3.5 h-3.5 text-brand-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
                     mgnagar67@gmail.com
                 </a>
@@ -68,114 +73,106 @@
         </div>
     </div>
 
-    <!-- Main Sticky Header -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-18 py-3 flex items-center justify-between gap-4">
+    <!-- Modern Floating Header -->
+    <header class="sticky top-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-4">
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-11 h-11 rounded-lg bg-brand-teal flex items-center justify-center p-1 shadow-sm border-2 border-brand-gold shrink-0">
-                    <svg viewBox="0 0 64 64" class="w-8 h-8" aria-hidden="true">
-                        <path d="M14 34 C14 20, 50 20, 50 34 Z" fill="#F4BE18"/>
-                        <rect x="10" y="33" width="44" height="5" rx="2.5" fill="#F4BE18" stroke="#0F415B" stroke-width="2"/>
-                        <rect x="29" y="18" width="6" height="14" rx="2" fill="#E0AC0D"/>
-                        <path d="M22 44 L42 44 M26 51 L38 51" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
-                    </svg>
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-teal to-brand-tealDark flex items-center justify-center font-black text-white text-lg shadow-lg shadow-brand-teal/20">
+                    M
                 </div>
                 <div>
-                    <span class="block font-display font-extrabold text-lg sm:text-xl leading-tight text-brand-teal tracking-tight">MENESH NAGAR</span>
-                    <span class="block text-[11px] font-bold tracking-[0.2em] text-slate-600 uppercase">BUILDERS • EST. BENONI</span>
+                    <span class="block font-display font-extrabold text-lg text-white tracking-tight">MENESH NAGAR</span>
+                    <span class="block text-[10px] font-bold tracking-[0.25em] text-brand-gold uppercase">BUILDERS</span>
                 </div>
             </a>
 
-            <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-700">
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
                 <a href="#services" class="hover:text-brand-teal transition-colors">Our Trades</a>
-                <a href="#about" class="hover:text-brand-teal transition-colors">About Menesh</a>
-                <a href="#projects" class="hover:text-brand-teal transition-colors">Recent Work</a>
-                <a href="#quote" class="hover:text-brand-teal transition-colors">Request a Quote</a>
+                <a href="#about" class="hover:text-brand-teal transition-colors">About</a>
+                <a href="#projects" class="hover:text-brand-teal transition-colors">Portfolio</a>
+                <a href="#quote" class="hover:text-brand-teal transition-colors">Get Quote</a>
             </nav>
 
-            <div class="flex items-center gap-2 sm:gap-3">
-                <a href="https://wa.me/27837773812?text=Hi%20Menesh%2C%20I%20found%20your%20website%20and%20would%20like%20to%20enquire%20about%20building%20or%20maintenance%20work." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white transition-colors shadow-sm">
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/27837773812?text=Hi%20Menesh%2C%20I%20visited%20your%20website%20and%20need%20a%20quote." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-600/30 transition-all">
                     WhatsApp
                 </a>
-                <a href="#quote" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-bold bg-brand-gold hover:bg-brand-goldHover text-brand-slate transition-colors shadow-sm">
-                    Get a Quote
+                <a href="#quote" class="px-5 py-2.5 rounded-xl text-sm font-bold bg-brand-gold text-brand-dark hover:bg-amber-400 transition-all shadow-lg shadow-brand-gold/20">
+                    Request Quote
                 </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-white border-b border-slate-200 overflow-hidden">
-        <div class="hidden lg:block absolute top-0 right-0 w-72 h-72 pointer-events-none">
-            <div class="w-full h-full bg-brand-teal card-corner-accent"></div>
-            <div class="absolute top-0 right-0 w-60 h-60 bg-brand-gold card-corner-accent"></div>
-            <div class="absolute top-0 right-0 w-48 h-48 bg-white card-corner-accent"></div>
-        </div>
-
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+    <section class="relative hero-glow pt-12 pb-20 overflow-hidden border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
-                <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 rounded-md bg-brand-goldLight border border-brand-gold/40 text-brand-slate text-xs sm:text-sm font-semibold">
-                        <span class="w-2 h-2 rounded-full bg-brand-teal"></span>
-                        NHBRC Registered Builder (No. 1-193210458) • Benoni &amp; East Rand
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-border/60 border border-brand-border text-slate-300 text-xs sm:text-sm font-medium">
+                        <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+                        NHBRC Certified Contractor • 9 Trades In-House
                     </div>
 
-                    <h1 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-[2.75rem] text-brand-slate leading-[1.15] tracking-tight">
-                        Proper Building, Renovations &amp; Property Maintenance — <span class="text-brand-teal">Done Right the First Time.</span>
+                    <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white leading-[1.1] tracking-tight">
+                        Precision Building &amp; Renovations. <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-gold">Done Right.</span>
                     </h1>
 
-                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
-                        From structural extensions, boundary walls, and driveway paving to plumbing, electrical, waterproofing, and painting. Deal directly with <strong class="text-slate-900">Menesh Nagar</strong> on site—one accountable team covering all nine trades across Benoni, Boksburg, and the greater East Rand.
+                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
+                        From structural construction and boundary walls to paving, plumbing, electrical, and waterproofing. Deal directly with <strong class="text-white font-semibold">Menesh Nagar</strong> on site across Benoni, Boksburg, and the East Rand.
                     </p>
 
-                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-1">
-                        <a href="tel:0837773812" class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-lg bg-brand-teal hover:bg-brand-tealDark text-white font-bold text-base shadow-sm transition-colors">
-                            Call Menesh: 083 777 3812
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                        <a href="#quote" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-brand-teal hover:bg-brand-tealDark text-white font-bold text-base shadow-xl shadow-brand-teal/20 transition-all">
+                            Book Free Site Inspection
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="#quote" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-brand-gold hover:bg-brand-goldHover text-brand-slate font-bold text-base shadow-sm transition-colors">
-                            Book a Free Site Quote
+                        <a href="tel:0837773812" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-brand-card hover:bg-brand-border text-white font-bold text-base border border-brand-border transition-all">
+                            Call 083 777 3812
                         </a>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-6 pt-6 border-t border-brand-border/60 max-w-lg">
+                        <div>
+                            <p class="font-display font-extrabold text-2xl text-white">9 Trades</p>
+                            <p class="text-xs text-brand-slate">Single accountable team</p>
+                        </div>
+                        <div>
+                            <p class="font-display font-extrabold text-2xl text-brand-gold">NHBRC</p>
+                            <p class="text-xs text-brand-slate">Reg: 1-193210458</p>
+                        </div>
+                        <div>
+                            <p class="font-display font-extrabold text-2xl text-white">Direct</p>
+                            <p class="text-xs text-brand-slate">On-site supervision</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Right Column: Direct Business Card Mascot Image -->
+                <!-- Mascot & Card Display Box -->
                 <div class="lg:col-span-5">
-                    <div class="bg-white rounded-2xl border-2 border-slate-200 shadow-lg overflow-hidden">
-                        <div class="relative bg-gradient-to-b from-slate-50 to-white p-6 pb-4 flex flex-col items-center">
-                            <div class="absolute top-0 right-0 w-24 h-24 bg-brand-teal card-corner-accent"></div>
-                            <div class="absolute top-0 right-0 w-20 h-20 bg-brand-gold card-corner-accent"></div>
-                            <div class="absolute top-0 right-0 w-16 h-16 bg-slate-50 card-corner-accent"></div>
-
-                            <!-- DIRECT IMAGE FROM REPOSITORY -->
-                            <img src="assets/builder-mascot.png" alt="Menesh Nagar Builders Mascot" class="w-64 sm:w-72 h-auto object-contain drop-shadow-sm relative z-10" />
-                        </div>
-
-                        <div class="bg-brand-teal text-white p-6 space-y-4">
-                            <div class="flex items-center justify-between gap-4 border-b border-white/15 pb-4">
-                                <div>
-                                    <p class="text-xs font-bold tracking-widest uppercase text-brand-gold">BUILDERS</p>
-                                    <h2 class="font-display font-extrabold text-2xl tracking-tight">Menesh Nagar</h2>
-                                    <p class="text-xs text-slate-200 mt-0.5">NHBRC No.: <span class="font-bold text-white">1-193210458</span></p>
-                                </div>
-                                
-                                <div class="bg-white/10 border border-white/25 rounded-lg px-3 py-2 text-right shrink-0">
-                                    <div class="font-display font-black text-2xl tracking-tighter leading-none text-white">NHBRC</div>
-                                    <div class="text-[8px] leading-tight uppercase tracking-wider text-brand-gold font-semibold mt-1">
-                                        National Home Builders<br>Registration Council
-                                    </div>
-                                </div>
+                    <div class="glass-panel rounded-3xl p-6 shadow-2xl relative group">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-brand-teal to-brand-gold rounded-3xl opacity-20 group-hover:opacity-40 transition duration-500 blur-xl"></div>
+                        <div class="relative bg-brand-card rounded-2xl p-6 border border-brand-border space-y-6">
+                            
+                            <!-- Mascot Image from Assets -->
+                            <div class="relative flex justify-center bg-gradient-to-b from-[#080E14] to-brand-card p-4 rounded-xl border border-brand-border/60">
+                                <img src="assets/builder-mascot.png" alt="Menesh Nagar Builders Mascot" class="w-60 sm:w-68 h-auto object-contain drop-shadow-xl" />
                             </div>
 
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs sm:text-sm">
-                                <a href="tel:0837773812" class="flex items-center gap-2 text-white hover:text-brand-gold transition-colors font-medium">
-                                    <span class="font-bold text-brand-gold">C:</span> 083 777 3812
-                                </a>
-                                <a href="mailto:mgnagar67@gmail.com" class="flex items-center gap-2 text-white hover:text-brand-gold transition-colors font-medium truncate">
-                                    <span class="font-bold text-brand-gold">E:</span> mgnagar67@gmail.com
-                                </a>
-                                <div class="sm:col-span-2 flex items-center gap-2 text-slate-200 text-xs pt-1">
-                                    <span class="font-bold text-brand-gold">P:</span> P.O. Box 1343, Benoni, 1501
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3 class="font-display font-extrabold text-xl text-white">Menesh Nagar</h3>
+                                        <p class="text-xs text-brand-gold font-semibold tracking-wider uppercase">Master Builder</p>
+                                    </div>
+                                    <div class="px-3 py-1 rounded-lg bg-brand-teal/10 border border-brand-teal/30 text-brand-teal font-black text-xs">
+                                        NHBRC
+                                    </div>
+                                </div>
+                                <div class="text-xs text-slate-300 space-y-1 pt-2 border-t border-brand-border">
+                                    <p><strong class="text-white">NHBRC No:</strong> 1-193210458</p>
+                                    <p><strong class="text-white">Postal:</strong> P.O. Box 1343, Benoni, 1501</p>
                                 </div>
                             </div>
                         </div>
@@ -186,141 +183,163 @@
         </div>
     </section>
 
-    <!-- 9 Services Section -->
-    <section id="services" class="py-16 sm:py-20 bg-brand-surface">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+    <!-- 9 Core Trades Grid -->
+    <section id="services" class="py-20 bg-[#070D12]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-14">
                 <div>
-                    <span class="inline-block text-xs font-bold uppercase tracking-widest text-brand-teal bg-brand-teal/10 px-3 py-1 rounded mb-3">Complete Building &amp; Maintenance Trades</span>
-                    <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-brand-slate">What We Build, Fix &amp; Maintain</h2>
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-teal bg-brand-teal/10 px-3 py-1 rounded-full border border-brand-teal/20">Core Competencies</span>
+                    <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-3">All 9 Trades Under One Roof</h2>
                 </div>
-                <p class="text-sm sm:text-base text-slate-600 max-w-md">
-                    No need to coordinate multiple contractors. Click any trade below to request a direct quote.
+                <p class="text-sm text-brand-slate max-w-md">
+                    Click any trade to instantly select it in our quote generator below.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- 1. Construction -->
-                <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-brand-teal transition-all flex flex-col justify-between group">
+                <div class="glass-panel p-7 rounded-2xl hover:border-brand-teal/60 transition-all group flex flex-col justify-between">
                     <div>
-                        <h3 class="font-display font-bold text-lg text-brand-slate mb-2">1. Construction</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-5">NHBRC-compliant residential builds, room additions, boundary walls, and foundations.</p>
+                        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 text-brand-teal flex items-center justify-center mb-5 group-hover:bg-brand-teal group-hover:text-brand-dark transition-all font-bold text-lg">01</div>
+                        <h3 class="font-display font-bold text-xl text-white mb-2">Construction</h3>
+                        <p class="text-sm text-brand-slate leading-relaxed mb-6">NHBRC-compliant residential builds, room additions, boundary walls, foundations, and structural brickwork.</p>
                     </div>
-                    <button type="button" onclick="selectServiceAndScroll('Construction')" class="inline-flex items-center gap-1.5 text-sm font-bold text-brand-teal hover:text-brand-tealDark">Enquire about Construction →</button>
+                    <button type="button" onclick="selectServiceAndScroll('Construction')" class="inline-flex items-center gap-2 text-sm font-bold text-brand-teal hover:text-white transition-colors">
+                        Select Construction &rarr;
+                    </button>
                 </div>
+
                 <!-- 2. Electrical -->
-                <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-brand-teal transition-all flex flex-col justify-between group">
+                <div class="glass-panel p-7 rounded-2xl hover:border-brand-teal/60 transition-all group flex flex-col justify-between">
                     <div>
-                        <h3 class="font-display font-bold text-lg text-brand-slate mb-2">2. Electrical</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-5">DB board upgrades, fault finding, plug and light installations, and security lighting.</p>
+                        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 text-brand-teal flex items-center justify-center mb-5 group-hover:bg-brand-teal group-hover:text-brand-dark transition-all font-bold text-lg">02</div>
+                        <h3 class="font-display font-bold text-xl text-white mb-2">Electrical</h3>
+                        <p class="text-sm text-brand-slate leading-relaxed mb-6">DB board upgrades, fault finding, light and plug installations, security lighting, and rewiring.</p>
                     </div>
-                    <button type="button" onclick="selectServiceAndScroll('Electrical')" class="inline-flex items-center gap-1.5 text-sm font-bold text-brand-teal hover:text-brand-tealDark">Enquire about Electrical →</button>
+                    <button type="button" onclick="selectServiceAndScroll('Electrical')" class="inline-flex items-center gap-2 text-sm font-bold text-brand-teal hover:text-white transition-colors">
+                        Select Electrical &rarr;
+                    </button>
                 </div>
+
                 <!-- 3. Plumbing -->
-                <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-brand-teal transition-all flex flex-col justify-between group">
+                <div class="glass-panel p-7 rounded-2xl hover:border-brand-teal/60 transition-all group flex flex-col justify-between">
                     <div>
-                        <h3 class="font-display font-bold text-lg text-brand-slate mb-2">3. Plumbing</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-5">Burst pipe repairs, geyser replacements, blocked drains, and sanitaryware fitting.</p>
+                        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 text-brand-teal flex items-center justify-center mb-5 group-hover:bg-brand-teal group-hover:text-brand-dark transition-all font-bold text-lg">03</div>
+                        <h3 class="font-display font-bold text-xl text-white mb-2">Plumbing</h3>
+                        <p class="text-sm text-brand-slate leading-relaxed mb-6">Burst pipe repairs, geyser replacements and valves, blocked drains, and bathroom pipework.</p>
                     </div>
-                    <button type="button" onclick="selectServiceAndScroll('Plumbing')" class="inline-flex items-center gap-1.5 text-sm font-bold text-brand-teal hover:text-brand-tealDark">Enquire about Plumbing →</button>
+                    <button type="button" onclick="selectServiceAndScroll('Plumbing')" class="inline-flex items-center gap-2 text-sm font-bold text-brand-teal hover:text-white transition-colors">
+                        Select Plumbing &rarr;
+                    </button>
                 </div>
+
                 <!-- 4. Paving -->
-                <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-brand-teal transition-all flex flex-col justify-between group">
+                <div class="glass-panel p-7 rounded-2xl hover:border-brand-teal/60 transition-all group flex flex-col justify-between">
                     <div>
-                        <h3 class="font-display font-bold text-lg text-brand-slate mb-2">4. Paving</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-5">Driveways, walkways, pool surrounds, and proper ground compaction and leveling.</p>
+                        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 text-brand-teal flex items-center justify-center mb-5 group-hover:bg-brand-teal group-hover:text-brand-dark transition-all font-bold text-lg">04</div>
+                        <h3 class="font-display font-bold text-xl text-white mb-2">Paving</h3>
+                        <p class="text-sm text-brand-slate leading-relaxed mb-6">Driveways, walkways, pool surrounds, proper ground compaction, edging, and sunken brick repairs.</p>
                     </div>
-                    <button type="button" onclick="selectServiceAndScroll('Paving')" class="inline-flex items-center gap-1.5 text-sm font-bold text-brand-teal hover:text-brand-tealDark">Enquire about Paving →</button>
+                    <button type="button" onclick="selectServiceAndScroll('Paving')" class="inline-flex items-center gap-2 text-sm font-bold text-brand-teal hover:text-white transition-colors">
+                        Select Paving &rarr;
+                    </button>
                 </div>
+
                 <!-- 5. Painting -->
-                <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-brand-teal transition-all flex flex-col justify-between group">
+                <div class="glass-panel p-7 rounded-2xl hover:border-brand-teal/60 transition-all group flex flex-col justify-between">
                     <div>
-                        <h3 class="font-display font-bold text-lg text-brand-slate mb-2">5. Painting</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-5">Interior and exterior house painting, roof coatings, wall crack filling, and damp priming.</p>
+                        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 text-brand-teal flex items-center justify-center mb-5 group-hover:bg-brand-teal group-hover:text-brand-dark transition-all font-bold text-lg">05</div>
+                        <h3 class="font-display font-bold text-xl text-white mb-2">Painting</h3>
+                        <p class="text-sm text-brand-slate leading-relaxed mb-6">Interior and exterior house painting, roof coatings, wall crack filling, damp priming, and prep work.</p>
                     </div>
-                    <button type="button" onclick="selectServiceAndScroll('Painting')" class="inline-flex items-center gap-1.5 text-sm font-bold text-brand-teal hover:text-brand-tealDark">Enquire about Painting →</button>
+                    <button type="button" onclick="selectServiceAndScroll('Painting')" class="inline-flex items-center gap-2 text-sm font-bold text-brand-teal hover:text-white transition-colors">
+                        Select Painting &rarr;
+                    </button>
                 </div>
+
                 <!-- 6. Waterproofing -->
-                <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-brand-teal transition-all flex flex-col justify-between group">
+                <div class="glass-panel p-7 rounded-2xl hover:border-brand-teal/60 transition-all group flex flex-col justify-between">
                     <div>
-                        <h3 class="font-display font-bold text-lg text-brand-slate mb-2">6. Waterproofing</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-5">Torch-on waterproofing for flat concrete roofs and balconies, and rising damp treatment.</p>
+                        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 text-brand-teal flex items-center justify-center mb-5 group-hover:bg-brand-teal group-hover:text-brand-dark transition-all font-bold text-lg">06</div>
+                        <h3 class="font-display font-bold text-xl text-white mb-2">Waterproofing</h3>
+                        <p class="text-sm text-brand-slate leading-relaxed mb-6">Torch-on waterproofing for flat concrete roofs and balconies, parapet wall sealing, and rising damp treatment.</p>
                     </div>
-                    <button type="button" onclick="selectServiceAndScroll('Waterproofing')" class="inline-flex items-center gap-1.5 text-sm font-bold text-brand-teal hover:text-brand-tealDark">Enquire about Waterproofing →</button>
+                    <button type="button" onclick="selectServiceAndScroll('Waterproofing')" class="inline-flex items-center gap-2 text-sm font-bold text-brand-teal hover:text-white transition-colors">
+                        Select Waterproofing &rarr;
+                    </button>
                 </div>
+
                 <!-- 7. Renovations -->
-                <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-brand-teal transition-all flex flex-col justify-between group">
+                <div class="glass-panel p-7 rounded-2xl hover:border-brand-teal/60 transition-all group flex flex-col justify-between">
                     <div>
-                        <h3 class="font-display font-bold text-lg text-brand-slate mb-2">7. Renovations</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-5">Complete kitchen and bathroom remodels, floor and wall tiling, and ceiling work.</p>
+                        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 text-brand-teal flex items-center justify-center mb-5 group-hover:bg-brand-teal group-hover:text-brand-dark transition-all font-bold text-lg">07</div>
+                        <h3 class="font-display font-bold text-xl text-white mb-2">Renovations</h3>
+                        <p class="text-sm text-brand-slate leading-relaxed mb-6">Complete kitchen and bathroom remodels, floor and wall tiling, ceilings, and modernisations.</p>
                     </div>
-                    <button type="button" onclick="selectServiceAndScroll('Renovations')" class="inline-flex items-center gap-1.5 text-sm font-bold text-brand-teal hover:text-brand-tealDark">Enquire about Renovations →</button>
+                    <button type="button" onclick="selectServiceAndScroll('Renovations')" class="inline-flex items-center gap-2 text-sm font-bold text-brand-teal hover:text-white transition-colors">
+                        Select Renovations &rarr;
+                    </button>
                 </div>
+
                 <!-- 8. Alterations -->
-                <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-brand-teal transition-all flex flex-col justify-between group">
+                <div class="glass-panel p-7 rounded-2xl hover:border-brand-teal/60 transition-all group flex flex-col justify-between">
                     <div>
-                        <h3 class="font-display font-bold text-lg text-brand-slate mb-2">8. Alterations</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-5">Opening load-bearing walls with steel lintels, garage conversions, and patio enclosures.</p>
+                        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 text-brand-teal flex items-center justify-center mb-5 group-hover:bg-brand-teal group-hover:text-brand-dark transition-all font-bold text-lg">08</div>
+                        <h3 class="font-display font-bold text-xl text-white mb-2">Alterations</h3>
+                        <p class="text-sm text-brand-slate leading-relaxed mb-6">Opening load-bearing walls with steel lintels, garage-to-flatlet conversions, and patio enclosures.</p>
                     </div>
-                    <button type="button" onclick="selectServiceAndScroll('Alterations')" class="inline-flex items-center gap-1.5 text-sm font-bold text-brand-teal hover:text-brand-tealDark">Enquire about Alterations →</button>
+                    <button type="button" onclick="selectServiceAndScroll('Alterations')" class="inline-flex items-center gap-2 text-sm font-bold text-brand-teal hover:text-white transition-colors">
+                        Select Alterations &rarr;
+                    </button>
                 </div>
+
                 <!-- 9. Maintenance and Repairs -->
-                <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-brand-teal transition-all flex flex-col justify-between group">
+                <div class="glass-panel p-7 rounded-2xl hover:border-brand-teal/60 transition-all group flex flex-col justify-between">
                     <div>
-                        <h3 class="font-display font-bold text-lg text-brand-slate mb-2">9. Maintenance &amp; Repairs</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-5">General home upkeep, insurance repair work, gutter clearing, and property touch-ups.</p>
+                        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 text-brand-teal flex items-center justify-center mb-5 group-hover:bg-brand-teal group-hover:text-brand-dark transition-all font-bold text-lg">09</div>
+                        <h3 class="font-display font-bold text-xl text-white mb-2">Maintenance &amp; Repairs</h3>
+                        <p class="text-sm text-brand-slate leading-relaxed mb-6">General home upkeep, insurance repair work, door locks, sagging gutters, and pre-sale touch-ups.</p>
                     </div>
-                    <button type="button" onclick="selectServiceAndScroll('Maintenance and Repairs')" class="inline-flex items-center gap-1.5 text-sm font-bold text-brand-teal hover:text-brand-tealDark">Enquire about Maintenance →</button>
+                    <button type="button" onclick="selectServiceAndScroll('Maintenance and Repairs')" class="inline-flex items-center gap-2 text-sm font-bold text-brand-teal hover:text-white transition-colors">
+                        Select Maintenance &rarr;
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Menesh Section -->
-    <section id="about" class="py-16 sm:py-20 bg-white border-y border-slate-200">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-                <div class="lg:col-span-6 space-y-5">
-                    <span class="inline-block text-xs font-bold uppercase tracking-widest text-brand-teal bg-brand-teal/10 px-3 py-1 rounded">Direct Accountability</span>
-                    <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-brand-slate leading-tight">
-                        Why Homeowners in Benoni &amp; the East Rand Call Menesh Directly
-                    </h2>
-                    <p class="text-slate-600 leading-relaxed">
-                        When you hire a builder, the biggest frustration is contractors who quote, take a deposit, and disappear—or leave you chasing separate plumbers, electricians, and tilers when schedules clash.
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-brand-dark border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-gold bg-brand-gold/10 px-3 py-1 rounded-full border border-brand-gold/20">Direct Accountability</span>
+                    <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white">Why Benoni &amp; East Rand Homeowners Trust Menesh</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        No disappearing contractors or mismanaged subcontractors. Menesh Nagar oversees your project directly from the initial inspection to the final handover.
                     </p>
-                    <p class="text-slate-600 leading-relaxed">
-                        At <strong class="text-slate-900">Menesh Nagar Builders</strong>, you deal directly with Menesh from the first site inspection to the final walkthrough. Because we handle all nine core building and maintenance trades in-house, your project moves smoothly without finger-pointing between subcontractors.
-                    </p>
-
-                    <div class="space-y-3 pt-2">
+                    <div class="space-y-4 pt-2">
                         <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 rounded-full bg-brand-gold text-brand-slate flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</div>
-                            <p class="text-sm text-slate-700"><strong class="text-slate-900">NHBRC Registered (No. 1-193210458):</strong> Full compliance with South African national building regulations.</p>
+                            <div class="w-6 h-6 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">NHBRC Registered (No. 1-193210458):</strong> Compliant with all national building regulations.</p>
                         </div>
                         <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 rounded-full bg-brand-gold text-brand-slate flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</div>
-                            <p class="text-sm text-slate-700"><strong class="text-slate-900">Clear, Itemised Quotes:</strong> Transparent breakdown of labour and materials before work begins.</p>
+                            <div class="w-6 h-6 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">✓</div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Itemised Quotations:</strong> Full transparency on materials and labour before work starts.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="lg:col-span-6">
-                    <div class="bg-brand-teal text-white rounded-2xl p-6 sm:p-8 shadow-md space-y-6">
-                        <div class="flex items-center justify-between border-b border-white/15 pb-4">
-                            <div>
-                                <h3 class="font-display font-bold text-xl">Areas We Cover</h3>
-                                <p class="text-xs text-slate-200 mt-0.5">Based in Benoni (P.O. Box 1343, Benoni, 1501)</p>
-                            </div>
-                            <span class="px-3 py-1 rounded bg-brand-gold text-brand-slate font-extrabold text-xs uppercase">East Rand</span>
-                        </div>
-
+                    <div class="glass-panel rounded-3xl p-8 space-y-6">
+                        <h3 class="font-display font-bold text-xl text-white">Service Areas</h3>
                         <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm font-medium">
-                            <div class="bg-white/10 rounded-lg px-3 py-2 flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Benoni</div>
-                            <div class="bg-white/10 rounded-lg px-3 py-2 flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Boksburg</div>
-                            <div class="bg-white/10 rounded-lg px-3 py-2 flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Kempton Park</div>
-                            <div class="bg-white/10 rounded-lg px-3 py-2 flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Brakpan</div>
-                            <div class="bg-white/10 rounded-lg px-3 py-2 flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Springs</div>
-                            <div class="bg-white/10 rounded-lg px-3 py-2 flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span> Germiston</div>
+                            <div class="bg-brand-card rounded-xl p-3 border border-brand-border text-slate-200">Benoni</div>
+                            <div class="bg-brand-card rounded-xl p-3 border border-brand-border text-slate-200">Boksburg</div>
+                            <div class="bg-brand-card rounded-xl p-3 border border-brand-border text-slate-200">Kempton Park</div>
+                            <div class="bg-brand-card rounded-xl p-3 border border-brand-border text-slate-200">Brakpan</div>
+                            <div class="bg-brand-card rounded-xl p-3 border border-brand-border text-slate-200">Springs</div>
+                            <div class="bg-brand-card rounded-xl p-3 border border-brand-border text-slate-200">Germiston</div>
                         </div>
                     </div>
                 </div>
@@ -328,95 +347,75 @@
         </div>
     </section>
 
-    <!-- Recent Work / Typical Projects Section -->
-    <section id="projects" class="py-16 sm:py-20 bg-brand-surface border-b border-slate-200">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            <div class="mb-10">
-                <span class="inline-block text-xs font-bold uppercase tracking-widest text-brand-teal bg-brand-teal/10 px-3 py-1 rounded mb-3">On The Job</span>
-                <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-brand-slate">Typical Projects We Handle</h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
-                    <div class="h-3 bg-brand-teal"></div>
-                    <div class="p-6 space-y-3">
-                        <span class="text-xs font-bold text-brand-teal uppercase">Construction &amp; Alterations</span>
-                        <h3 class="font-display font-bold text-lg text-brand-slate">Home Extensions &amp; Boundary Walls</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">Foundations, face-brick or plastered boundary walls, and open-plan structural wall removals with steel lintels.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
-                    <div class="h-3 bg-brand-gold"></div>
-                    <div class="p-6 space-y-3">
-                        <span class="text-xs font-bold text-brand-teal uppercase">Waterproofing &amp; Painting</span>
-                        <h3 class="font-display font-bold text-lg text-brand-slate">Roof Sealing &amp; Full Exterior Repaint</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">Torch-on waterproofing on concrete slabs and parapets, ridge re-bedding, and weatherproof exterior wall coatings.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
-                    <div class="h-3 bg-brand-teal"></div>
-                    <div class="p-6 space-y-3">
-                        <span class="text-xs font-bold text-brand-teal uppercase">Renovations &amp; Plumbing</span>
-                        <h3 class="font-display font-bold text-lg text-brand-slate">Kitchen &amp; Bathroom Overhauls</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">Complete strip-out, rerouting water and waste pipes, new lighting, tiling, and sanitaryware installation.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quote Section -->
-    <section id="quote" class="py-16 sm:py-20 bg-white">
+    <!-- Interactive Quote Generator -->
+    <section id="quote" class="py-20 bg-[#070D12] border-t border-brand-border">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
-            <div class="bg-brand-surface rounded-2xl border-2 border-slate-200 p-6 sm:p-10 shadow-sm">
-                <div class="border-b border-slate-200 pb-6 mb-8">
-                    <span class="inline-block text-xs font-bold uppercase tracking-widest text-brand-teal bg-brand-teal/10 px-3 py-1 rounded mb-2">Free Site Inspection &amp; Quote</span>
-                    <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-brand-slate">Request a Quote from Menesh</h2>
+            <div class="glass-panel rounded-3xl p-8 sm:p-12 shadow-2xl">
+                <div class="border-b border-brand-border pb-6 mb-8">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-gold bg-brand-gold/10 px-3 py-1 rounded-full border border-brand-gold/20">Instant Quote Request</span>
+                    <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white mt-3">Book Your Site Inspection</h2>
+                    <p class="text-sm text-brand-slate mt-1">Select your trades and send your details directly to Menesh.</p>
                 </div>
 
                 <form id="quoteForm" class="space-y-6" onsubmit="return false;">
                     <div>
-                        <label class="block text-sm font-bold text-brand-slate mb-3">1. Which service(s) do you need?</label>
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-                            <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-slate-300 cursor-pointer"><input type="checkbox" name="services" value="Construction" class="w-4 h-4 accent-brand-teal rounded"> Construction</label>
-                            <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-slate-300 cursor-pointer"><input type="checkbox" name="services" value="Electrical" class="w-4 h-4 accent-brand-teal rounded"> Electrical</label>
-                            <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-slate-300 cursor-pointer"><input type="checkbox" name="services" value="Plumbing" class="w-4 h-4 accent-brand-teal rounded"> Plumbing</label>
-                            <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-slate-300 cursor-pointer"><input type="checkbox" name="services" value="Paving" class="w-4 h-4 accent-brand-teal rounded"> Paving</label>
-                            <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-slate-300 cursor-pointer"><input type="checkbox" name="services" value="Painting" class="w-4 h-4 accent-brand-teal rounded"> Painting</label>
-                            <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-slate-300 cursor-pointer"><input type="checkbox" name="services" value="Waterproofing" class="w-4 h-4 accent-brand-teal rounded"> Waterproofing</label>
-                            <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-slate-300 cursor-pointer"><input type="checkbox" name="services" value="Renovations" class="w-4 h-4 accent-brand-teal rounded"> Renovations</label>
-                            <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-slate-300 cursor-pointer"><input type="checkbox" name="services" value="Alterations" class="w-4 h-4 accent-brand-teal rounded"> Alterations</label>
-                            <label class="flex items-center gap-2.5 p-3 rounded-lg bg-white border border-slate-300 cursor-pointer"><input type="checkbox" name="services" value="Maintenance and Repairs" class="w-4 h-4 accent-brand-teal rounded"> Maintenance &amp; Repairs</label>
+                        <label class="block text-sm font-bold text-white mb-3">1. Select Required Service(s)</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-brand-card border border-brand-border cursor-pointer hover:border-brand-teal transition-all">
+                                <input type="checkbox" name="services" value="Construction" class="w-4 h-4 accent-brand-teal rounded"> <span class="text-sm font-medium text-slate-200">Construction</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-brand-card border border-brand-border cursor-pointer hover:border-brand-teal transition-all">
+                                <input type="checkbox" name="services" value="Electrical" class="w-4 h-4 accent-brand-teal rounded"> <span class="text-sm font-medium text-slate-200">Electrical</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-brand-card border border-brand-border cursor-pointer hover:border-brand-teal transition-all">
+                                <input type="checkbox" name="services" value="Plumbing" class="w-4 h-4 accent-brand-teal rounded"> <span class="text-sm font-medium text-slate-200">Plumbing</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-brand-card border border-brand-border cursor-pointer hover:border-brand-teal transition-all">
+                                <input type="checkbox" name="services" value="Paving" class="w-4 h-4 accent-brand-teal rounded"> <span class="text-sm font-medium text-slate-200">Paving</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-brand-card border border-brand-border cursor-pointer hover:border-brand-teal transition-all">
+                                <input type="checkbox" name="services" value="Painting" class="w-4 h-4 accent-brand-teal rounded"> <span class="text-sm font-medium text-slate-200">Painting</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-brand-card border border-brand-border cursor-pointer hover:border-brand-teal transition-all">
+                                <input type="checkbox" name="services" value="Waterproofing" class="w-4 h-4 accent-brand-teal rounded"> <span class="text-sm font-medium text-slate-200">Waterproofing</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-brand-card border border-brand-border cursor-pointer hover:border-brand-teal transition-all">
+                                <input type="checkbox" name="services" value="Renovations" class="w-4 h-4 accent-brand-teal rounded"> <span class="text-sm font-medium text-slate-200">Renovations</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-brand-card border border-brand-border cursor-pointer hover:border-brand-teal transition-all">
+                                <input type="checkbox" name="services" value="Alterations" class="w-4 h-4 accent-brand-teal rounded"> <span class="text-sm font-medium text-slate-200">Alterations</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-brand-card border border-brand-border cursor-pointer hover:border-brand-teal transition-all">
+                                <input type="checkbox" name="services" value="Maintenance and Repairs" class="w-4 h-4 accent-brand-teal rounded"> <span class="text-sm font-medium text-slate-200">Maintenance &amp; Repairs</span>
+                            </label>
                         </div>
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                         <div>
-                            <label for="clientName" class="block text-sm font-bold text-brand-slate mb-1.5">Your Name *</label>
-                            <input type="text" id="clientName" required placeholder="e.g. Johan van der Merwe" class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 text-sm">
+                            <label for="clientName" class="block text-sm font-bold text-white mb-2">Your Name *</label>
+                            <input type="text" id="clientName" required placeholder="John Smith" class="w-full px-4 py-3 rounded-xl bg-brand-card border border-brand-border text-white text-sm focus:outline-none focus:border-brand-teal">
                         </div>
                         <div>
-                            <label for="clientPhone" class="block text-sm font-bold text-brand-slate mb-1.5">Cell / WhatsApp Number *</label>
-                            <input type="tel" id="clientPhone" required placeholder="e.g. 082 123 4567" class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 text-sm">
+                            <label for="clientPhone" class="block text-sm font-bold text-white mb-2">Cell Number *</label>
+                            <input type="tel" id="clientPhone" required placeholder="082 123 4567" class="w-full px-4 py-3 rounded-xl bg-brand-card border border-brand-border text-white text-sm focus:outline-none focus:border-brand-teal">
                         </div>
                         <div>
-                            <label for="clientSuburb" class="block text-sm font-bold text-brand-slate mb-1.5">Suburb / Area *</label>
-                            <input type="text" id="clientSuburb" required placeholder="e.g. Farrarmere, Benoni" class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 text-sm">
+                            <label for="clientSuburb" class="block text-sm font-bold text-white mb-2">Suburb *</label>
+                            <input type="text" id="clientSuburb" required placeholder="Benoni" class="w-full px-4 py-3 rounded-xl bg-brand-card border border-brand-border text-white text-sm focus:outline-none focus:border-brand-teal">
                         </div>
                     </div>
 
                     <div>
-                        <label for="jobDetails" class="block text-sm font-bold text-brand-slate mb-1.5">Job Description *</label>
-                        <textarea id="jobDetails" rows="4" required placeholder="Describe what needs to be built or repaired..." class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-slate-300 text-sm"></textarea>
+                        <label for="jobDetails" class="block text-sm font-bold text-white mb-2">Project Details *</label>
+                        <textarea id="jobDetails" rows="4" required placeholder="Describe what you need built or repaired..." class="w-full px-4 py-3 rounded-xl bg-brand-card border border-brand-border text-white text-sm focus:outline-none focus:border-brand-teal"></textarea>
                     </div>
 
-                    <div id="formFeedback" class="hidden rounded-lg p-3.5 text-sm font-medium"></div>
-
-                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
-                        <button type="button" onclick="submitQuote('whatsapp')" class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm sm:text-base transition-colors shadow-sm">
-                            Send Request via WhatsApp
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <button type="button" onclick="submitQuote('whatsapp')" class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base transition-all shadow-lg shadow-emerald-600/20">
+                            Send via WhatsApp (Fastest)
                         </button>
-                        <button type="button" onclick="submitQuote('email')" class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-brand-teal hover:bg-brand-tealDark text-white font-bold text-sm sm:text-base transition-colors shadow-sm">
+                        <button type="button" onclick="submitQuote('email')" class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-brand-teal hover:bg-brand-tealDark text-white font-bold text-sm sm:text-base transition-all shadow-lg shadow-brand-teal/20">
                             Send via Email
                         </button>
                     </div>
@@ -426,8 +425,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-brand-tealDark text-white border-t-4 border-brand-gold">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-300">
+    <footer class="bg-[#05090D] border-t border-brand-border py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-slate">
             <p>&copy; <span id="year"></span> Menesh Nagar Builders. NHBRC Reg No.: 1-193210458</p>
             <p>Benoni, Gauteng, South Africa</p>
         </div>
@@ -451,7 +450,7 @@
             const selectedServices = Array.from(document.querySelectorAll('input[name="services"]:checked')).map(cb => cb.value);
 
             if (!name || !phone || !suburb || !details) {
-                alert('Please fill in your name, contact number, suburb, and job description.');
+                alert('Please fill in your name, contact number, suburb, and project details.');
                 return;
             }
 
